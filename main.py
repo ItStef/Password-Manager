@@ -4,11 +4,10 @@ import saving as sv
 import menu as mn
 
 window = tk.Tk()
-window.title("Password Manager")
-window.geometry("1280x720")
 
 sv.saving_account(window)
 
+mn.menu_settings(window, sv.list_of_themeable)
 
 # Start the GUI event loop
 window.mainloop()
