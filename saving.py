@@ -38,6 +38,7 @@ def saving_account(window: tk.Tk):
     save_button = tk.Button(window, text="Save", command=save_account)
     save_button.pack()
 
+
     # Create a button to decrypt the password
     def decrypt_password():
         try:
@@ -71,3 +72,6 @@ def saving_account(window: tk.Tk):
 
     decrypt_button = tk.Button(window, text="Decrypt", command=decrypt_password)
     decrypt_button.pack()
+
+    global list_of_themeable
+    list_of_themeable = [save_button, decrypt_button, account_for_label, username_label, password_label, account_for_field, username_field, password_field]
